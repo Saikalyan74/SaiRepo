@@ -11,8 +11,10 @@ public class AppTest
 {
     
     @Test
-    public void shouldAnswerWithTrue()
+    public void positives()
     {
+     
+    	
         assertTrue( true );
     }
 }
