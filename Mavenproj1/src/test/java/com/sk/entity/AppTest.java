@@ -1,5 +1,6 @@
 package com.sk.entity;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -9,12 +10,14 @@ import org.junit.Test;
  */
 public class AppTest 
 {
+	private static Arathematic ar;
     
     @Test
-    public void positives()
+    public void testSumWithpositives()
     {
-     
-    	
-        assertTrue( true );
+     Arathematic ar=new Arathematic();
+      int expected=30;
+      int actual=ar.sum(10, 20);
+        assertEquals(expected, actual);
     }
 }
