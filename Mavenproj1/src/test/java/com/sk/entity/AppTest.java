@@ -20,4 +20,20 @@ public class AppTest
       int actual=ar.sum(10, 20);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testSumWithNegatives()
+    {
+     Arathematic ar=new Arathematic();
+      int expected=-100;
+      int actual=ar.sum(-50, -50);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void testSumWithZeros()
+    {
+     Arathematic ar=new Arathematic();
+      int expected=0;
+      int actual=ar.sum(0, 0);
+        assertEquals(expected, actual);
+    }
 }
