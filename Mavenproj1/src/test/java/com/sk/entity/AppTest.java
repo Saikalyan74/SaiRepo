@@ -16,16 +16,16 @@ public class AppTest
     public void testSumWithpositives()
     {
      Arathematic ar=new Arathematic();
-      int expected=30;
-      int actual=ar.sum(10, 20);
+      int expected=100;
+      int actual=ar.sum(60, 40);
         assertEquals(expected, actual);
     }
     @Test
     public void testSumWithNegatives()
     {
      Arathematic ar=new Arathematic();
-      int expected=-100;
-      int actual=ar.sum(-50, -50);
+      int expected=-400;
+      int actual=ar.sum(-200, -200);
         assertEquals(expected, actual);
     }
     @Test
